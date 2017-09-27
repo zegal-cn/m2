@@ -10,7 +10,7 @@ import { MdNativeDateModule } from "@angular/material";
 
 import { AppComponent } from "./app.component";
 
-import { NavBarModule } from "./shared/navbar/navbar";
+import { NavBarModule } from "./shared/navbar/navbar.module";
 
 @NgModule({
   declarations: [AppComponent],
