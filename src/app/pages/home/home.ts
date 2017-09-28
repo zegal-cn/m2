@@ -7,12 +7,12 @@ import { Component, NgModule, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-homepage",
-  templateUrl: "./homepage.html",
-  styleUrls: ["./homepage.scss"],
+  templateUrl: "./home.html",
+  styleUrls: ["./home.scss"],
 })
 export class HomePage implements OnInit {
-  constructor() // public _componentPageTitle: ComponentPageTitle
-  {
+  constructor() {
+    // public _componentPageTitle: ComponentPageTitle
   }
 
   ngOnInit(): void {

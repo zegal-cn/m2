@@ -1,2 +1,14 @@
-<app-navbar class="mat-elevation-z6"></app-navbar>
-<!-- <router-outlet></router-outlet> -->
+<app-navbar class="mat-elevation-z6">
+  <div class="normal">
+    <a md-button class="docs-navbar-hide-small docs-button mat-button" routerLink="home">Components</a>
+    <a md-button class="docs-navbar-hide-small docs-button mat-button" routerLink="home">Guides</a>
+    <button md-button>Click me!</button>
+  </div>
+
+  <!-- <small>
+      <a md-button class="docs-navbar-link" routerLink="home">Components</a>
+      <a md-button class="docs-navbar-link" routerLink="home">Guides</a>
+  </small> -->
+</app-navbar>
+
+<router-outlet></router-outlet>
