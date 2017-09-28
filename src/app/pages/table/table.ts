@@ -1,4 +1,4 @@
-import { Component, ViewChild } from "@angular/core";
+import { Component, ViewChild, OnInit } from "@angular/core";
 import { DataSource } from "@angular/cdk/collections";
 import { BehaviorSubject } from "rxjs/BehaviorSubject";
 import { Observable } from "rxjs/Observable";
@@ -12,14 +12,15 @@ import "rxjs/add/operator/map";
   templateUrl: "table.html",
   styleUrls: ["table.scss"],
 })
-export class TablePage {
+export class TablePage implements OnInit {
   displayedColumns = ["userId", "userName", "progress", "color"];
   exampleDatabase = new ExampleDatabase();
   dataSource: ExampleDataSource | null;
 
-  @ViewChild(MdSort) sort: MdSort;
+  @ViewChild("table") sort: MdSort;
 
   ngOnInit() {
+    console.log(this.sort);
     this.dataSource = new ExampleDataSource(this.exampleDatabase, this.sort);
   }
 }
